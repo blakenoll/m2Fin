@@ -1,3 +1,8 @@
+---
+---
+@import "custom-elements";
+$navy: #0b233f;
+$red: #a32b2a;
 /*!
  * Start Bootstrap - Full Width Pics (http://startbootstrap.com/template-overviews/full-width-pics)
  * Copyright 2013-2017 Start Bootstrap
@@ -5,7 +10,7 @@
  */
 
 body {
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Roboto', serif;
   padding-top: 54px;
 }
 
@@ -15,12 +20,39 @@ body {
     }
 }
 
+h1, h2, h3, h4, h5, h6 {
+  color: #000;
+  text-transform: capitalize;
+}
+
+.bg-navy {
+  background-color: #fff;
+  color: #000;
+
+  a {
+    color: #000;
+  }
+
+}
+
 .bg-image-full {
     background: no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+}
+
+.btn-black {
+  background-color: #000;
+  color: #ffffff;
+  &:hover {
+    color: darken(#ffffff, 20%);
+  }
+}
+
+.center {
+  text-align: center;
 }
 
 .service {
