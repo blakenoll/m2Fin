@@ -87,6 +87,16 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
 }
 
+.flex-row {
+  display: flex;
+  align-items: center;
+}
+
+.flex-column {
+  display: flex;
+  flex-flow: column;
+}
+
 .service {
   position: relative;
   width: 100%;
