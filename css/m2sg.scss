@@ -1,5 +1,6 @@
 ---
 ---
+@import url('https://fonts.googleapis.com/css?family=Questrial');
 @import "custom-elements";
 $navy: #0b233f;
 $red: #a32b2a;
@@ -10,7 +11,8 @@ $red: #a32b2a;
  */
 
 body {
-  font-family: 'Roboto', serif;
+  font-family: 'Questrial',
+  serif;
   padding-top: 54px;
 }
 
@@ -47,6 +49,11 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+.bg-white {
+  background-color: white;
+  color: $navy;
+}
+
 .bg-image-full {
     background: no-repeat center center scroll;
     -webkit-background-size: cover;
@@ -57,7 +64,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .ca {
   background-attachment: fixed;
-  height: 90vh;
+  height: 80vh;
   max-height: 900px;
   position: relative;
 
@@ -107,6 +114,13 @@ h1, h2, h3, h4, h5, h6 {
   display: block;
   width: 100%;
   height: auto;
+}
+
+.navbar-light .navbar-brand {
+  color: #8a7741;
+  &:hover {
+    color: #8a7741;
+  }
 }
 
 .navbar-dark {
@@ -162,3 +176,5 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     align-items: center;
 }
+
+@import "flex";
