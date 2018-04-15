@@ -38,6 +38,10 @@ h1, h2, h3, h4, h5, h6 {
     color: #fff;
   }
 
+  h1,h2,h3,h4,h5,h6 {
+    color: #8a7741;
+  }
+
 }
 
 .bg-red {
@@ -67,9 +71,13 @@ h1, h2, h3, h4, h5, h6 {
   height: 80vh;
   max-height: 900px;
   position: relative;
+  -webkit-clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
+  clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
 
   &.right {
     background-size: cover;
+    -webkit-clip-path: polygon(25% 0, 100% 0%, 100% 100%, 0 100%);
+    clip-path: polygon(25% 0, 100% 0%, 100% 100%, 0 100%);
   }
 
   img {
