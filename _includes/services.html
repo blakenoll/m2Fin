@@ -108,19 +108,13 @@
   <div class="container">
     <h1 class="center">Our Services</h1>
     <div class="row flex-row flex-evenly center">
-      {% for service in site.services %}
+      {% assign services = site.services | sort: 'position' 'last' %}
+      {% for service in services %}
       <div class="title-card m2 depth-1">
-      <img src="{{service.logo}}" alt="" width="100px">
+      <img src="{{service.logo}}" alt="" width="100px" style="background-image: {{ service.background-image }}">
       <h3>{{service.title}}</h3>
       </div>
       {% endfor %}
-      <div class="title-card easi depth-1">
-      <h3>EASI Invest</h3>
-      </div>
-      <div class="title-card power depth-1">
-      <img src="images/M2_LogoFinal-02.png" alt="" width="100px">
-      <h3>M2 Power Plan</h3>
-      </div>
     </div>
   </div>
 </section>

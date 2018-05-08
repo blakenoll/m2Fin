@@ -28,6 +28,12 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: capitalize;
 }
 
+header {
+  h3 {
+    color: #827c7c;
+  }
+}
+
 .white-text {
   color: #ffffff;
 }
@@ -40,7 +46,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   h1,h2,h3,h4,h5,h6 {
-    color: #8a7741;
+    color: #827c7c;
   }
 
 }
@@ -126,9 +132,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar-light .navbar-brand {
-  color: #8a7741;
+  color: #827c7c;
   &:hover {
-    color: #8a7741;
+    color: #827c7c;
   }
 }
 
