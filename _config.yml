@@ -8,6 +8,9 @@ collections:
   uploads:
     title: Uploads
     output: true
+  services:
+    title: services
+    output: true
 url: https://blakenoll.github.io/m2Fin
 sass:
   style: compressed
