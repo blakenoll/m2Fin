@@ -108,10 +108,12 @@
   <div class="container">
     <h1 class="center">Our Services</h1>
     <div class="row flex-row flex-evenly center">
+      {% for service in site.services %}
       <div class="title-card m2 depth-1">
-      <img src="images/M2-Mark_BW.jpg" alt="" width="100px">
-      <h3>M2 Capital Advisors</h3>
+      <img src="{{service.logo}}" alt="" width="100px">
+      <h3>{{service.title}}</h3>
       </div>
+      {% endfor %}
       <div class="title-card easi depth-1">
       <h3>EASI Invest</h3>
       </div>
