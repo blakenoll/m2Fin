@@ -1,103 +1,3 @@
-<!-- Content section -->
-<!-- <section class="py-5">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-6 col-md-3">
-        <div class="service">
-          <h2>Service</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero doloribus aspernatur error dignissimos, praesentium obcaecati ipsam illum odit quae sapiente cum dicta assumenda repudiandae tempora pariatur deleniti sed enim tempore!</p>
-          <div class="overlay">
-            <a href="{{'/capitaladvisors' | prepend: site.url }}">
-              <div class="text">
-                <img src="images/M2-Logo_BW.jpg" alt="" width="100%">
-              </div>
-            </a>
-
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-6 col-md-3">
-        <div class="service">
-          <h2>Service</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero doloribus aspernatur error dignissimos, praesentium obcaecati ipsam illum odit quae sapiente cum dicta assumenda repudiandae tempora pariatur deleniti sed enim tempore!</p>
-          <div class="overlay">
-            <div class="text">
-              <img src="images/M2-Logo_BW.jpg" alt="" width="100%">
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-6 col-md-3">
-        <div class="service">
-          <h2>Service</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero doloribus aspernatur error dignissimos, praesentium obcaecati ipsam illum odit quae sapiente cum dicta assumenda repudiandae tempora pariatur deleniti sed enim tempore!</p>
-          <div class="overlay">
-            <div class="text">
-              <img src="images/M2-Logo_BW.jpg" alt="" width="100%">
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-6 col-md-3">
-        <div class="service">
-          <h2>Service</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero doloribus aspernatur error dignissimos, praesentium obcaecati ipsam illum odit quae sapiente cum dicta assumenda repudiandae tempora pariatur deleniti sed enim tempore!</p>
-          <div class="overlay">
-            <div class="text">
-              <img src="images/M2-Logo_BW.jpg" alt="" width="100%">
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-6 col-md-3">
-        <div class="service">
-          <h2>Service</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero doloribus aspernatur error dignissimos, praesentium obcaecati ipsam illum odit quae sapiente cum dicta assumenda repudiandae tempora pariatur deleniti sed enim tempore!</p>
-          <div class="overlay">
-            <div class="text">
-              <img src="images/M2-Logo_BW.jpg" alt="" width="100%">
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-6 col-md-3">
-        <div class="service">
-          <h2>Service</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero doloribus aspernatur error dignissimos, praesentium obcaecati ipsam illum odit quae sapiente cum dicta assumenda repudiandae tempora pariatur deleniti sed enim tempore!</p>
-          <div class="overlay">
-            <div class="text">
-              <img src="images/M2-Logo_BW.jpg" alt="" width="100%">
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-6 col-md-3">
-        <div class="service">
-          <h2>Service</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero doloribus aspernatur error dignissimos, praesentium obcaecati ipsam illum odit quae sapiente cum dicta assumenda repudiandae tempora pariatur deleniti sed enim tempore!</p>
-          <div class="overlay">
-            <div class="text">
-              <img src="images/M2-Logo_BW.jpg" alt="" width="100%">
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-6 col-md-3">
-        <div class="service">
-          <h2>Service</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero doloribus aspernatur error dignissimos, praesentium obcaecati ipsam illum odit quae sapiente cum dicta assumenda repudiandae tempora pariatur deleniti sed enim tempore!</p>
-          <div class="overlay">
-            <div class="text">
-              <img src="images/M2-Logo_BW.jpg" alt="" width="100%">
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section> -->
-
 <section class="py-5">
   <div class="container">
     <h1>Who we are</h1>
@@ -110,8 +10,8 @@
     <div class="row flex-row flex-evenly center">
       {% assign services = site.services | sort: 'position' 'last' %}
       {% for service in services %}
-      <div class="title-card m2 depth-1">
-      <img src="{{service.logo}}" alt="" width="100px" style="background-image: {{ service.background-image }}">
+    <div class="title-card m2 depth-1" style="background-image: url({{ service.background-image }})">
+      <img src="{{service.logo}}" alt="" width="100px">
       <h3>{{service.title}}</h3>
       </div>
       {% endfor %}
