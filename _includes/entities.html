@@ -1,43 +1,41 @@
 <section class="py-5">
   <div id="entities" class="row">
+ {% assign services = site.services | sort: 'position' 'last' %}
       <div class="col-sm-6 order-sm-1 bg-navy">
-        <div class="bg-image-full ca center" style="background-image: url('images/mountains.jpeg');">
+        <div class="bg-image-full ca center" style="background-image: url({{ services[0].background-image}});">
           <img src="images/M2-Mark_BW.jpg" class="center-item depth-1" alt="">
         </div>
       </div>
       <div class="col-sm-6 order-sm-2 p-5 flex-row bg-navy">
         <div class="flex-item">
-          <h3>M2 Capital Advisors</h3>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum, laudantium mollitia nihil velit rem et adipisci quis vero,
-            laborum harum natus voluptatibus eius dolores, aut maxime! Quia earum velit labore.</p>
+          <h3>{{ services[0].title }}</h3>
+          <p>{{ site.services[0] }}</p>
           <a href="" class="btn btn-dark">click</a>
         </div>
       </div>
     
       <div class="col-sm-6 order-sm-4">
         <div class="bg-image-full ca right" style="background-image: url('images/wall_street_1920.jpg');">
-          <img src="images/M2-Mark_BW.jpg" class="center-item depth-1" alt="">
+          <img src="{{services[1].logo}}" class="center-item depth-1" alt="">
         </div>
       </div>
       <div class="col-sm-6 order-sm-3 p-5 flex-row">
         <div class="flex-item">
-          <h3>EASI Invest</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quis qui, in, mollitia sint fugiat eligendi, atque tempora
-            omnis minus corporis ea! Repellat ducimus adipisci minus fugit, vitae aliquid laudantium.</p>
+          <h3>{{ services[1].title }}</h3>
+          <p>{{ services[1] }}.</p>
           <a href="" class="btn btn-dark">click</a>
         </div>
       </div>
     
       <div class="col-sm-6 order-sm-5 bg-navy">
-        <div class="bg-image-full ca" style="background-image: url('images/mountains.jpeg');">
-          <img src="images/M2-Mark_BW.jpg" class="center-item depth-1" alt="">
+        <div class="bg-image-full ca" style="background-image: url({{services[2].background-image}});">
+          <img src="{{services[2].logo}}" class="center-item" alt="">
         </div>
       </div>
       <div class="col-sm-6 order-sm-6 p-5 flex-row bg-navy">
             <div class="flex-item">
-              <h3>M2 Power Plan</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, praesentium. Magnam, accusamus iste? Earum delectus placeat
-                corporis nihil vel, et facere culpa illum fugiat quisquam! Distinctio vel beatae blanditiis possimus!</p>
+              <h3>{{ services[2].title }}</h3>
+              <p>{{ services[2] }}</p>
               <a href="" class="btn btn-dark">click</a>
             </div>
       </div>
