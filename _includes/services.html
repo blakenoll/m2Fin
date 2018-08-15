@@ -18,7 +18,7 @@
     <div class="row flex-row flex-evenly center">
       {% assign services = site.services | sort: 'position' 'last' %}
       {% for service in services %}
-    <div class="title-card m2 depth-1" style="background-image: url({{ service.background-image }})">
+    <div class="title-card m2 depth-1" style="background-image: url(.{{ service.background-image }})">
       <div class="image-conatiner">
         <img src="{{service.logo}}" alt="" width="100px">
         <h3>{{service.title}}</h3>

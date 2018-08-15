@@ -2,7 +2,7 @@
   <div id="entities" class="row">
  {% assign services = site.services | sort: 'position' 'last' %}
       <div class="col-sm-6 order-sm-1 bg-navy">
-        <div class="bg-image-full ca center" style="background-image: url({{ services[0].background-image}});">
+        <div class="bg-image-full ca center" style="background-image: url(.{{ services[0].background-image}});">
           <img src="images/M2-Mark_BW.jpg" class="center-item depth-1" alt="">
         </div>
       </div>
