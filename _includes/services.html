@@ -1,3 +1,12 @@
+<style>
+  .title-card {
+    position: relative;
+  }
+  .title-card:hover .overlay {
+    height: 100%;
+  }
+</style>
+
 <section class="py-5">
   <div class="container">
     {{ page.who-we-are-body | markdownify }}
@@ -10,8 +19,15 @@
       {% assign services = site.services | sort: 'position' 'last' %}
       {% for service in services %}
     <div class="title-card m2 depth-1" style="background-image: url({{ service.background-image }})">
-      <img src="{{service.logo}}" alt="" width="100px">
-      <h3>{{service.title}}</h3>
+      <div class="image-conatiner">
+        <img src="{{service.logo}}" alt="" width="100px">
+        <h3>{{service.title}}</h3>
+      </div>
+      <div class="overlay">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe eligendi consequatur dicta blanditiis porro dolore quas ullam vitae dolor laboriosam veniam aperiam cumque, perspiciatis amet nemo tenetur illum illo laudantium!
+        </p>
+      </div>
       </div>
       {% endfor %}
     </div>
