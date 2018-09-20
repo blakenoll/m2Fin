@@ -17,3 +17,4 @@ our-team-body: |-
 layout: default
 ---
 
+M2 Stewardship Group represents multiple endeavors in investing, all with the goal and priority of acting on behalf of investors and clients with focused care and expertise.
