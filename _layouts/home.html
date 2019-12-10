@@ -3,8 +3,13 @@
   {% include head.html %}
 
   <body>
-    {% include nav.html %} {% include header.html %} {{content}} {% include
-    contact.html %} {% include footer.html %}
+    {% include nav.html %} {% include header.html %} {% include services.html %}
+    {% include entities.html %} {% include philosophy.html %} {% include
+    whatwedo.html %}
+
+    <div class="py-5 ">
+      {% include contact.html %} {% include footer.html %}
+    </div>
 
     <!-- Bootstrap core JavaScript -->
     <script src="{{ '/vendor/jquery/jquery.min.js' | prepend: site.url }}"></script>
