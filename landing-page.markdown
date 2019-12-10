@@ -2,7 +2,7 @@
 title: Landing Page
 date: 2018-05-08 03:58:00 Z
 permalink: "/"
-Stewardship:
+Stewardship: 
 Who we are: |-
   # Who we are
 
@@ -15,7 +15,7 @@ our-team-body: |-
   # Our Team
 
   text...
-Services:
+Services: 
 layout: home
 ---
 
